@@ -23,7 +23,7 @@ const Navbar = () => {
 export default Navbar;
 
 const StyledNav = styled.div`
-    border:2px solid red;
+    /* border:2px solid red; */
 
     >.nav{
         /* border:1px solid blue; */

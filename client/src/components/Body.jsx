@@ -1,7 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
+import axios from 'axios'
 
 const BodyLeft = () => {
+
+  useEffect(() => {
+  
+    const postData = async () => {
+      
+      try{
+        const response = await axios.get("http://localhost:5000")
+      }catch(err){
+
+      }
+
+    }
+
+  })
+
+
   return (
     <HeroSection>
       <main className='hero-section'>
@@ -41,6 +58,7 @@ const HeroSection = styled.div`
     /* margin-top: 2rem; */
     padding: 1rem;
     cursor: pointer;
+    position:sticky;
   }
 
   .right {

@@ -2,10 +2,15 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
+import User from './models/User';
+import Post from './models/Post';
 
 
 // initialize dotenv to load environment variables
 dotenv.config();
+app.use(express.json()); // To parse JSON request body
+app.use(express.urlencoded({ extended: true })); // To parse URL-encoded bodies
+
 
 const app = express();
 
@@ -27,6 +32,9 @@ const databaseConnection = async () => {
 }
 
 databaseConnection()
+
+
+
 
 
 
